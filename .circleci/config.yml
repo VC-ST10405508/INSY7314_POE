@@ -30,11 +30,11 @@ jobs:
       - checkout
       - run: node --version
       - run: 
-        name: Install dependencies
-        command: npm install
+          name: Install dependencies
+          command: npm install
       - run:
-        name: Run backend
-        command: npm run dev
+          name: Run backend
+          command: npm run dev
 
 # Orchestrate jobs using workflows
 # See: https://circleci.com/docs/guides/orchestrate/workflows/ & https://circleci.com/docs/reference/configuration-reference/#workflows
