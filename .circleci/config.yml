@@ -27,7 +27,7 @@ jobs:
       # See: https://circleci.com/developer/images/image/cimg/base
       - image: cimg/node:25.1.0
     steps:
-      - checkout
+      - checkout backend
       - run: node --version
       - run: 
           name: Install dependencies
