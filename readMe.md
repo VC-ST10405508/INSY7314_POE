@@ -22,6 +22,8 @@ The API then interacts with our front-end which is created with the following:
 - CSS (in future - 2 devs had unfortunate circumstances and werent able to help much for this program. As a team we accept this as our failure to deliver)
 - HTML
 
+Additional tools:
+- CircleCI pipeline with SonarQube
 ---
 # Team Members:
 - Kabelo Ntokozo Will Mndebele – ST10030414
