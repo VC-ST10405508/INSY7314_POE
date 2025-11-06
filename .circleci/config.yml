@@ -13,12 +13,12 @@ jobs:
       # Specify the version you desire here
       # See: https://circleci.com/developer/images/image/cimg/base (CircleCI, 2021; CircleCI Developer, 2025):
       - image: cimg/node:25.1.0
-        docker_layer_caching: true
     # Add steps to the job
     # See: https://circleci.com/docs/guides/orchestrate/jobs-steps/#steps-overview & https://circleci.com/docs/reference/configuration-reference/#steps
     steps:
       # Checkout the code as the first step.
       - checkout
+      - docker_layer_caching: true
       - run:
           name: "Say hello"
           command: "echo Hello, World!"
