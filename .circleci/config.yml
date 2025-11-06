@@ -47,18 +47,6 @@ jobs:
       - image: cimg/node:25.1.0
     steps:
       - checkout
-      - run:
-          name: Install dependencies and build project
-          command: |
-            cd backend
-            npm install
-            npm run dev
-      - run:
-          name: Install dependencies and build project
-          command: |
-            cd frontend
-            npm install
-            npm run dev
       - sonarcloud/scan
 
 # Orchestrate jobs using workflows
