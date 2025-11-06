@@ -26,8 +26,7 @@ jobs:
 # Orchestrate jobs using workflows
 # See: https://circleci.com/docs/guides/orchestrate/workflows/ & https://circleci.com/docs/reference/configuration-reference/#workflows
 workflows:
-#this is the name of the workflow - you can see above that this will run a docker image and get the node version
-  say-hello-workflow: 
+  say-hello-workflow: #this is the name of the workflow - you can see above that this will run a docker image and get the node version
     # Inside the workflow, you define the jobs you want to run.
     jobs:
       - say-hello
