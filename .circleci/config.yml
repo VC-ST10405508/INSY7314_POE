@@ -21,6 +21,13 @@ jobs:
       - run:
           name: "Say hello"
           command: "echo Hello, World!"
+  build:
+    docker:
+      # Specify the version you desire here
+      # See: https://circleci.com/developer/images/image/cimg/base
+      - image: cimg/node:25.1.0
+    steps:
+      - checkout
       - run: node --version
 
 # Orchestrate jobs using workflows
@@ -30,3 +37,6 @@ workflows:
     # Inside the workflow, you define the jobs you want to run.
     jobs:
       - say-hello
+  build-workflow:
+    jobs:
+      - build
