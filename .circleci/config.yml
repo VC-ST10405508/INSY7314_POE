@@ -32,12 +32,12 @@ jobs:
       - checkout
       - run: node --version
       - run: 
-          name: Install dependencies
+          name: Install dependencies for backend
           command: |
             cd backend
             npm install
       - run: 
-          name: Install dependencies
+          name: Install dependencies for frontend
           command: |
             cd frontend
             npm install
