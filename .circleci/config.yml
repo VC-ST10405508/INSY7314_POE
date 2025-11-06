@@ -61,7 +61,7 @@ workflows:
     jobs:
       - build
       - buildSonarQube:
-          context: sonarcloud
+          context: SonarCloud
 
 #Reference list:
 
