@@ -3,6 +3,9 @@
 # See: https://circleci.com/docs/reference/configuration-reference
 version: 2.1
 
+orbs:
+  sonarcloud: sonarsource/sonarcloud@3.0.1
+  node: circleci/node@5.0.3
 # Define a job to be invoked later in a workflow.
 # See: https://circleci.com/docs/guides/orchestrate/jobs-steps/#jobs-overview & https://circleci.com/docs/reference/configuration-reference/#jobs
 jobs:
@@ -40,6 +43,12 @@ jobs:
           command: |
             cd frontend
             npm install
+  buildSonarQube:
+    docker:
+      - image: node:latest
+    steps:
+      - checkout
+      - sonarcloud/scan
 
 # Orchestrate jobs using workflows
 # See: https://circleci.com/docs/guides/orchestrate/workflows/ & https://circleci.com/docs/reference/configuration-reference/#workflows
@@ -52,6 +61,8 @@ workflows:
   build-workflow:
     jobs:
       - build
+      - buildSonarQube:
+          context: sonarcloud
 
 #Reference list:
 
