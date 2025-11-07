@@ -31,6 +31,9 @@ Figure 3
 - Very Important. The build: context: SonarCloud   - this part is case sensitive. I found this out the hard way. I spent an hour debugging trying to test and figure out why it didn’t work. My context was sonarcloud in the yaml file. However, on the CircleCI project context, the context setup in figure 2, I named it SonarCloud. This making it does not recognize the context path as its case sensitive.
 It should work now. If you get any errors they should be pretty easy to debug based on the error code.
 
+# SonarQube scan link:
+In this section you can see our SonarQube security score. The repository is public and so is the SonarQube project.
+SonarQube result link: https://sonarcloud.io/project/issues?issueStatuses=OPEN%2CCONFIRMED&id=VC-ST10405508_INSY7314_POE 
 # Reference List:
 CircleCI. 2021. How to get started with CircleCI. [video online] Available at: https://www.youtube.com/watch?v=Js3hMUsSZ2c&list=PL9GgS3TcDh8x6tcY7HDq2zmEx0fAtwWsM&index=1  [Accessed 6 November 2025].
 CircleCI. 2018. Configure multiple jobs with Workflows on CircleCI. [video online] Available at: https://www.youtube.com/watch?v=3V84yEz6HwA&list=PL9GgS3TcDh8x6tcY7HDq2zmEx0fAtwWsM&index=6  [Accessed 6 November 2025].
