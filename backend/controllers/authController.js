@@ -10,53 +10,6 @@ const emailRegex = /^[\w.-]+@[\w.-]+\.\w+$/;
 const passwordRegex = /^(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{6,}$/;
 //Regex for password and email validation(freecodecamp.ord, 2024):
 
-export const register = async (req, res) => {
-  const { userFullName, userID, email, password, userRole } = req.body;
-//(Microsoft, 2025)
-  if (!userFullName || !userID || !email || !password) {
-    return res
-      .status(400)
-      .json({ success: false, message: "All fields are required" });
-  }
-  //Ensures all fields are not empty (Microsoft, 2025)
-
-  if (!emailRegex.test(email)) {
-    return res
-      .status(400)
-      .json({ success: false, message: "Invalid email format" });
-      //Checks format of email(Microsoft, 2025)
-  }
-
-  if (!passwordRegex.test(password)) {
-    return res.status(400).json({
-      success: false,
-      message:
-        "Password must be at least 6 characters and include a special symbol (!@#$%^&*)",
-        //Checks length and inclustion of special characters in password (Microsoft, 2025)
-    });
-  }
-
-  try {
-    const newUser = new User({ userFullName, userID, email, password, userRole });
-    //(Microsoft, 2025)
-    await newUser.save();
-
-    const token = jwtGeneration(newUser._id, newUser.userRole);
-    res.status(201).json({ success: true, data: newUser, token });
-    //(Microsoft, 2025)
-  } catch (error) {
-    console.log("Error occured: " + error);
-    if (error.code === 11000) {
-      return res
-        .status(400)
-        .json({ success: false, message: "Email or UserID already exists" });
-        // Ensures no duplication of users within the system (Microsoft, 2025)
-    }
-    res.status(500).json({ success: false, message: "Server error" });
-  }
-};
-
-
 
 export const login = async (req, res) => {
   const { email, password } = req.body;

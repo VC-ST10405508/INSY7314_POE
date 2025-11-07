@@ -2,8 +2,8 @@ import { Link } from 'react-router-dom'
 export default function AppHome(){
   return (
     <div style={{padding:20}}>
-      <h1>Welcome!</h1>
-      <p><Link to="/register">Register</Link> | <Link to="/login">Login</Link></p>
+      <h1>Welcome to the Emeris Student Banking Portal!</h1>
+      <p><Link to="/login">Login</Link></p>
     </div>
     // welcome page for greeting users(freecodecamp.ord, 2024):
   )
