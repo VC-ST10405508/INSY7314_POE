@@ -44,19 +44,19 @@ jobs:
             
   #SonarQube test
   buildSonarQube:
-    docker:
-      - image: cimg/node:25.1.0
-    steps:
-      - checkout
+  docker:
+    - image: cimg/node:25.1.0
+  steps:
+    - checkout
     # Run tests with coverage
-      - run:
+    - run:
         name: Run tests with coverage
         command: |
           cd backend
           npm install
           npm run test
-      #Running the sonarQube scan (CircleCI Developers, 2025):
-      - sonarcloud/scan
+    # Running the SonarQube scan
+    - sonarcloud/scan
 
 # Orchestrate jobs using workflows
 # See: https://circleci.com/docs/guides/orchestrate/workflows/ & https://circleci.com/docs/reference/configuration-reference/#workflows
