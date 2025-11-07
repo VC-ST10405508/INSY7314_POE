@@ -11,8 +11,7 @@ https://youtu.be/ParaTKMbdCw
 
 # Introduction
 ---
-Welcome to Team 9's solution for INSY7314. The goal of this part is to implement security measures for user login and registration. We will also implement a UI for this portal.
-For this solution we create an API with the following:
+Welcome to Team 9's solution for the final part of INSY7314. In this part we add circleCI pipeline with SonarQube, remove registration, keep passwords hashed + salted and add more functionality, better UI design and more security. The project is created with the following for the backend:
 - express
 - node.js
 - mongo database
