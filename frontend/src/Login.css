@@ -7,7 +7,7 @@ html, body {
 body {
   font-family: "Inter", sans-serif;
   background: linear-gradient(135deg, #0b3d91, #1e88e5);
-  margin: 0;
+  margin: auto;
   color: #1a1a1a;
 }
 /*freecodecamp.org, 2024*/
@@ -17,6 +17,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  min-width: 100vw;
   padding: 20px;
 }
 /*freecodecamp.org, 2024*/
@@ -26,6 +27,7 @@ body {
   padding: 40px 50px;
   width: 100%;
   max-width: 420px;
+  margin: auto;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   text-align: center;
 }

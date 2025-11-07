@@ -9,6 +9,7 @@ body {
 .admin-container {
   padding: 40px;
   min-height: 100vh;
+  min-width: 95vw;
 }
 /*freecodecamp.org, 2024*/
 .admin-header {
