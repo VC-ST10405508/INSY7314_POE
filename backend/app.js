@@ -3,7 +3,6 @@ import cors  from "cors";
 import helmet from "helmet";
 import dotenv from "dotenv";
 import rateLimit from "express-rate-limit";
-import mongoSanitize from "express-mongo-sanitize";
 import authRoutes from "./routes/authRoutes.js"
 //(freecodecamp.ord, 2024):
 
@@ -30,7 +29,6 @@ app.use(cors({origin: "https://localhost:" + process.env.frontEndPort, credentia
 app.use(express.json());
 //(freecodecamp.ord, 2024):
 app.use(limiter);
-app.use(mongoSanitize());
 app.use(express.json());
 app.use("/api/auth", authRoutes);
 

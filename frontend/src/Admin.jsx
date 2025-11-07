@@ -52,7 +52,6 @@ export default function AdminDashboard() {
             <th>Amount</th>
             <th>Description</th>
             <th>Date</th>
-            <th>Status</th>
           </tr>
         </thead>
         <tbody>
@@ -63,7 +62,6 @@ export default function AdminDashboard() {
               <td>{tx.amount}</td>
               <td>{tx.description}</td>
               <td>{new Date(tx.date).toLocaleDateString()}</td>
-              <td>{tx.status || 'pending'}</td>
             </tr>
           ))}
         </tbody>
