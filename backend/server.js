@@ -1,7 +1,7 @@
 import connectDB from './config/database.js';
 import app from './app.js';
-import https  from "https"
-import fs from 'fs';
+import https  from "node:https"
+import fs from 'node:fs';
 import dotenv from "dotenv";
 import transactionRoutes from "./routes/transRoutes.js";
 

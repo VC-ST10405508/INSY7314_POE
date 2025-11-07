@@ -4,7 +4,6 @@ import { useNavigate } from 'react-router-dom'
 //(freecodecamp.org, 2024):
 
 export default function NewTransaction() {
-  const [transactionID, setTransactionID] = useState('')
   const [type, setType] = useState('payment') // default option
   const [amount, setAmount] = useState('')
   const [recipient, setRecipient] = useState('')
