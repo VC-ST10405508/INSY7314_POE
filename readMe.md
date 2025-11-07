@@ -11,7 +11,7 @@ https://youtu.be/ParaTKMbdCw
 
 # Introduction
 ---
-Welcome to Team 9's part 2 solution for INSY7314. The goal of this part is to implement security measures for user login and registration. We will also implement a UI for this portal.
+Welcome to Team 9's solution for INSY7314. The goal of this part is to implement security measures for user login and registration. We will also implement a UI for this portal.
 For this solution we create an API with the following:
 - express
 - node.js
