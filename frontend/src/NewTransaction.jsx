@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { getToken } from './auth'
 import { useNavigate } from 'react-router-dom'
+import "./NewTransaction.css";
 //(freecodecamp.org, 2024):
 
 export default function NewTransaction() {
@@ -57,69 +58,78 @@ export default function NewTransaction() {
   //(freecodecamp.org, 2024):
 
   return (
-    <div style={{ padding: 20 }}>
-      <h2>Add Transaction</h2>
-      <form onSubmit={handleSubmit}>
-        <div>
-          <label>Type:</label><br />
-          <label>
+    <div className="new-transaction-container">
+      <div className="new-transaction-card">
+        <h2>Add New Transaction</h2>
+
+        <form onSubmit={handleSubmit} className="transaction-form">
+          <div className="form-group type-select">
+            <label className="label">Type:</label>
+            <div className="radio-group">
+              <label className="radio-option">
+                <input
+                  type="radio"
+                  name="type"
+                  value="payment"
+                  checked={type === "payment"}
+                  onChange={(e) => setType(e.target.value)}
+                />
+                Payment
+              </label>
+              <label className="radio-option">
+                <input
+                  type="radio"
+                  name="type"
+                  value="request"
+                  checked={type === "request"}
+                  onChange={(e) => setType(e.target.value)}
+                />
+                Request
+              </label>
+            </div>
+          </div>
+
+          <div className="form-group">
+            <label className="label">Amount (R):</label>
             <input
-              type="radio"
-              name="type"
-              value="payment"
-              checked={type === 'payment'}
-              onChange={(e) => setType(e.target.value)}
+              type="number"
+              required
+              placeholder="Enter amount"
+              value={amount}
+              onChange={(e) => setAmount(e.target.value)}
             />
-            Payment
-          </label>
-          <label style={{ marginLeft: '10px' }}>
+          </div>
+
+          <div className="form-group">
+            <label className="label">Recipient:</label>
             <input
-              type="radio"
-              name="type"
-              value="request"
-              checked={type === 'request'}
-              onChange={(e) => setType(e.target.value)}
+              type="text"
+              required
+              placeholder="Enter recipient name or ID"
+              value={recipient}
+              onChange={(e) => setRecipient(e.target.value)}
             />
-            Request
-          </label>
-        </div>
+          </div>
 
-        <div>
-          <label>Amount:</label>
-          <input
-            type="number"
-            required
-            value={amount}
-            onChange={(e) => setAmount(e.target.value)}
-          />
-        </div>
+          <div className="form-group">
+            <label className="label">Description:</label>
+            <input
+              type="text"
+              required
+              placeholder="Enter a short note"
+              value={description}
+              onChange={(e) => setDescription(e.target.value)}
+            />
+          </div>
 
-        <div>
-          <label>Recipient:</label>
-          <input
-            type="text"
-            required
-            value={recipient}
-            onChange={(e) => setRecipient(e.target.value)}
-          />
-        </div>
+          <button type="submit" className="save-btn">
+            Save Transaction
+          </button>
 
-        <div>
-          <label>Description:</label>
-          <input
-            type="text"
-            required
-            value={description}
-            onChange={(e) => setDescription(e.target.value)}
-          />
-        </div>
-
-        <button type="submit">Save</button>
-        
-      </form>
-      {message && <p>{message}</p>}
+          {message && <p className="message">{message}</p>}
+        </form>
+      </div>
     </div>
-    //(freecodecamp.org, 2024):
   )
 }
 

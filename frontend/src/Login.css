@@ -1,0 +1,108 @@
+body {
+  font-family: "Inter", sans-serif;
+  background: linear-gradient(135deg, #0b3d91, #1e88e5);
+  margin: 0;
+  color: #1a1a1a;
+}
+
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.auth-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 40px 50px;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h2 {
+  color: #0b3d91;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  color: #666;
+  font-size: 0.9em;
+  margin-bottom: 30px;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1em;
+  transition: border 0.3s;
+}
+
+input:focus {
+  border-color: #1e88e5;
+  outline: none;
+}
+
+.login-btn {
+  background: #43a047;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.1s;
+  margin-top: 5px;
+}
+.login-btn:hover {
+  background: #2e7d32;
+  transform: translateY(-1px);
+}
+
+.message {
+  margin-top: 15px;
+  font-weight: 600;
+}
+
+.message:has(> [text*="success"]) {
+  color: #2e7d32;
+}
+.message:has(> [text*="error"]),
+.message:has(> [text*="Invalid"]) {
+  color: #c62828;
+}
+
+.register-link {
+  margin-top: 20px;
+  color: #555;
+  font-size: 0.9em;
+}
+.register-link span {
+  color: #1e88e5;
+  cursor: pointer;
+  font-weight: 600;
+}
+.register-link span:hover {
+  text-decoration: underline;
+}

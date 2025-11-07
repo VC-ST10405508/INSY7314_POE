@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { getToken, removeToken } from './auth'
 import { useNavigate } from 'react-router-dom'
+import "./Dashboard.css";
 //(freecodecamp.org, 2024):
 
 export default function Dashboard() {
@@ -44,23 +45,49 @@ export default function Dashboard() {
 
 
   return (
-    <div style={{ padding: 20 }}>
-      <h2>User Dashboard</h2>
-      <button onClick={logout}>Logout</button>
-      <h3>My Transactions</h3>
+    <div className="dashboard-container">
+      <header className="dashboard-header">
+        <h2>My Dashboard</h2>
+        <button className="logout-btn" onClick={logout}>
+          Logout
+        </button>
+      </header>
 
-      {message && <p>{message}</p>}
+      <div className="transactions-card">
+        <div className="transactions-header">
+          <h3>My Transactions</h3>
+          <button className="add-btn" onClick={goToAddTransaction}>
+            + Add Transaction
+          </button>
+        </div>
 
-      <ul>
-        {transactions.map((tx) => (
-          <li key={tx._id}>
-            ID: {tx.transactionID} | {tx.type} | Amount: {tx.amount} | Status: {tx.status}
-          </li>
-        ))}
-      </ul>
+        {message && <p className="message">{message}</p>}
 
-      <button onClick={goToAddTransaction}>Add Transaction</button>
-      {/* (freecodecamp.org, 2024): */}
+        <table className="transactions-table">
+          <thead>
+            <tr>
+              <th>Transaction ID</th>
+              <th>Type</th>
+              <th>Amount</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            {transactions.map((tx) => (
+              <tr key={tx._id}>
+                <td>{tx.transactionID}</td>
+                <td>{tx.type}</td>
+                <td>R{tx.amount?.toFixed(2)}</td>
+                <td>
+                  <span className={`status-badge ${tx.status?.toLowerCase()}`}>
+                    {tx.status}
+                  </span>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
     </div>
   )
 }

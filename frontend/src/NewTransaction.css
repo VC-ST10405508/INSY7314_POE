@@ -1,0 +1,105 @@
+body {
+  font-family: "Inter", sans-serif;
+  background: linear-gradient(135deg, #0b3d91, #1e88e5);
+  color: #1a1a1a;
+  margin: 0;
+  padding: 0;
+}
+
+.new-transaction-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.new-transaction-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 30px 40px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #0b3d91;
+}
+
+.transaction-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1em;
+  transition: border 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+  border-color: #1e88e5;
+  outline: none;
+}
+
+.type-select {
+  margin-bottom: 20px;
+}
+
+.radio-group {
+  display: flex;
+  gap: 15px;
+}
+
+.radio-option {
+  font-weight: 500;
+}
+
+.save-btn {
+  background: #43a047;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.1s;
+}
+
+.save-btn:hover {
+  background: #2e7d32;
+  transform: translateY(-1px);
+}
+
+.message {
+  text-align: center;
+  font-weight: 600;
+  margin-top: 15px;
+}
+
+.message:has(> [text*="successfully"]) {
+  color: #2e7d32;
+}
+
+.message:has(> [text*="Error"]),
+.message:has(> [text*="Server"]) {
+  color: #c62828;
+}

@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { saveToken } from './auth'
+import "./Login.css";
 
 export default function Login(){
   const [email,setEmail]=useState('')
@@ -34,16 +35,43 @@ export default function Login(){
   }
 
   return (
-    <div style={{padding:20}}>
-      <h2>Login</h2>
-      <form onSubmit={submit}>
-        <div><input required placeholder="Email" type="email" value={email} onChange={e=>setEmail(e.target.value)} /></div>
-        <div><input required placeholder="Password" type="password" value={password} onChange={e=>setPassword(e.target.value)} /></div>
-        <button type="submit">Login</button>
-      </form>
-      {msg && <p>{msg}</p>}
+    <div className="auth-container">
+      <div className="auth-card">
+        <h2>Welcome Back</h2>
+        <p className="subtitle">Securely access your account</p>
+
+        <form onSubmit={submit} className="auth-form">
+          <div className="form-group">
+            <label>Email Address</label>
+            <input
+              type="email"
+              required
+              placeholder="you@example.com"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+          </div>
+
+          <div className="form-group">
+            <label>Password</label>
+            <input
+              type="password"
+              required
+              placeholder="••••••••"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+            />
+          </div>
+
+          <button type="submit" className="login-btn">
+            Sign In
+          </button>
+
+          {msg && <p className="message">{msg}</p>}
+        </form>
+
+      </div>
     </div>
-    //(freecodecamp.ord, 2024):
   )
 }
 
