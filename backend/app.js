@@ -2,6 +2,8 @@ import express from "express";
 import cors  from "cors";
 import helmet from "helmet";
 import dotenv from "dotenv";
+import rateLimit from "express-rate-limit";
+import mongoSanitize from "express-mongo-sanitize";
 import authRoutes from "./routes/authRoutes.js"
 //(freecodecamp.ord, 2024):
 
@@ -10,6 +12,16 @@ dotenv.config();
 //(freecodecamp.ord, 2024):
 
 const app = express();
+const limiter = rateLimit({
+  windowMs: 15 * 60 * 1000, // 15 minutes
+  max: 100, // limit each IP to 100 requests
+  message: {
+    success: false,
+    message: "Too many requests from this IP, please try again later."
+  },
+  standardHeaders: true,
+  legacyHeaders: false
+});
 
 //middleware
 app.use(helmet());
@@ -17,8 +29,9 @@ app.use(cors({origin: "https://localhost:" + process.env.frontEndPort, credentia
 //allowing program to req and res json files
 app.use(express.json());
 //(freecodecamp.ord, 2024):
-
-
+app.use(limiter);
+app.use(mongoSanitize());
+app.use(express.json());
 app.use("/api/auth", authRoutes);
 
 app.get('/', (req,res) => res.send("banking portal is running :D"));
