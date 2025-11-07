@@ -41,6 +41,7 @@ jobs:
           command: |
             cd frontend
             npm install
+      - sonarcloud/scan
   #SonarQube test
   buildSonarQube:
     docker:
