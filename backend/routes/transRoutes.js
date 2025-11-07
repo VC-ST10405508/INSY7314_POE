@@ -4,24 +4,24 @@ import Transaction from "../models/Transaction.js";
 
 const router = express.Router();
 
-// Middleware to verify token
+//Middleware to verify token
 const authenticate = (req, res, next) => {
   const token = req.headers.authorization?.split(" ")[1];
   if (!token) return res.status(401).json({ message: "No token provided" });
 
   try {
     const decoded = jwt.verify(token, process.env.tokenSecret);
-    console.log("✅ AUTH Middleware decoded:", decoded); // 🔍 Debug line
+    console.log("AUTH Middleware decoded:", decoded); // 🔍 Debug line
     req.user = decoded;
     next();
   } catch (err) {
-    console.error("❌ Invalid token:", err.message);
+    console.error("Invalid token:", err.message);
     return res.status(403).json({ message: "Invalid token" });
   }
 };
 
 
-// ✅ Add Transaction endpoint
+//Transaction endpoint
 router.post("/add", authenticate, async (req, res) => {
   try {
     // ✅ Generate a random 6-digit transaction ID
