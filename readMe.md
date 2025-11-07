@@ -51,6 +51,7 @@ Additional tools:
 - 3.3 npm install
 - npm install will detect any additional stuff we added according to the json and didnt add in the first cmd
 - 4: run this command: npm install nodemon -D
+- 4.1: Add the .env file stated at end of this readme. Also add your ssl folder with cert.key and pem.key
 - 5: run the app with: npm run dev - this will start the backend
 - 6: open a new terminal and do cd frontend
 - 7: npm install
