@@ -42,9 +42,11 @@ export default function AdminDashboard() {
       <header className="admin-header">
         <h2>Admin Dashboard</h2>
         <button className="logout-btn" onClick={logout}>
+          {/*freecodecamp.org, 2024*/}
           Logout
         </button>
       </header>
+      {/*freecodecamp.org, 2024*/}
 
       <div className="transactions-card">
         <div className="transactions-header">
@@ -52,8 +54,10 @@ export default function AdminDashboard() {
           <div className="actions-bar">
             <input type="text" placeholder="Search..." className="search-input" />
             <button className="export-btn">Export</button>
+            {/*freecodecamp.org, 2024*/}
           </div>
         </div>
+        {/*freecodecamp.org, 2024*/}
 
         {message && <p className="message">{message}</p>}
 
@@ -66,6 +70,7 @@ export default function AdminDashboard() {
               <th>Description</th>
               <th>Date</th>
               <th>Status</th>
+              {/*freecodecamp.org, 2024*/}
             </tr>
           </thead>
           <tbody>
@@ -76,7 +81,8 @@ export default function AdminDashboard() {
                     <div className="avatar">{tx.userId?.userFullName?.[0] || "?"}</div>
                     <div>
                       <div className="user-name">{tx.userId?.userFullName || "N/A"}</div>
-                      <div className="user-role">Student</div>
+                      <div className="user-role">User</div>
+                      {/*freecodecamp.org, 2024*/}
                     </div>
                   </div>
                 </td>
@@ -87,11 +93,12 @@ export default function AdminDashboard() {
                 <td className={`status ${tx.status?.toLowerCase() || "pending"}`}>
                   {tx.status || "Pending"}
                 </td>
+                {/*freecodecamp.org, 2024*/}
               </tr>
             ))}
           </tbody>
         </table>
-      </div>
+      </div>{/*freecodecamp.org, 2024*/}
     </div>
   )
 }

@@ -61,6 +61,8 @@ export default function NewTransaction() {
     <div className="new-transaction-container">
       <div className="new-transaction-card">
         <h2>Add New Transaction</h2>
+{/*freecodecamp.org, 2024*/}
+
 
         <form onSubmit={handleSubmit} className="transaction-form">
           <div className="form-group type-select">
@@ -74,6 +76,7 @@ export default function NewTransaction() {
                   checked={type === "payment"}
                   onChange={(e) => setType(e.target.value)}
                 />
+                {/*freecodecamp.org, 2024*/}
                 Payment
               </label>
               <label className="radio-option">
@@ -86,6 +89,7 @@ export default function NewTransaction() {
                 />
                 Request
               </label>
+              {/*freecodecamp.org, 2024*/}
             </div>
           </div>
 
@@ -98,6 +102,7 @@ export default function NewTransaction() {
               value={amount}
               onChange={(e) => setAmount(e.target.value)}
             />
+            {/*freecodecamp.org, 2024*/}
           </div>
 
           <div className="form-group">
@@ -109,6 +114,7 @@ export default function NewTransaction() {
               value={recipient}
               onChange={(e) => setRecipient(e.target.value)}
             />
+            {/*freecodecamp.org, 2024*/}
           </div>
 
           <div className="form-group">
@@ -120,13 +126,14 @@ export default function NewTransaction() {
               value={description}
               onChange={(e) => setDescription(e.target.value)}
             />
+            {/*freecodecamp.org, 2024*/}
           </div>
 
           <button type="submit" className="save-btn">
             Save Transaction
           </button>
-
           {message && <p className="message">{message}</p>}
+          {/*freecodecamp.org, 2024*/}
         </form>
       </div>
     </div>

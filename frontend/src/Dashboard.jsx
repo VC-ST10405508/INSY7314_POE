@@ -51,6 +51,7 @@ export default function Dashboard() {
         <button className="logout-btn" onClick={logout}>
           Logout
         </button>
+        {/*freecodecamp.org, 2024*/}
       </header>
 
       <div className="transactions-card">
@@ -59,9 +60,11 @@ export default function Dashboard() {
           <button className="add-btn" onClick={goToAddTransaction}>
             + Add Transaction
           </button>
+          {/*freecodecamp.org, 2024*/}
         </div>
 
         {message && <p className="message">{message}</p>}
+        {/*freecodecamp.org, 2024*/}
 
         <table className="transactions-table">
           <thead>
@@ -70,6 +73,7 @@ export default function Dashboard() {
               <th>Type</th>
               <th>Amount</th>
               <th>Status</th>
+              {/*freecodecamp.org, 2024*/}
             </tr>
           </thead>
           <tbody>
@@ -82,6 +86,7 @@ export default function Dashboard() {
                   <span className={`status-badge ${tx.status?.toLowerCase()}`}>
                     {tx.status}
                   </span>
+                  {/*freecodecamp.org, 2024*/}
                 </td>
               </tr>
             ))}

@@ -13,7 +13,7 @@ body {
   min-height: 100vh;
   padding: 20px;
 }
-
+/*freecodecamp.org, 2024*/
 .new-transaction-card {
   background: #fff;
   border-radius: 12px;
@@ -28,7 +28,7 @@ h2 {
   margin-bottom: 25px;
   color: #0b3d91;
 }
-
+/*freecodecamp.org, 2024*/
 .transaction-form {
   display: flex;
   flex-direction: column;
@@ -37,7 +37,7 @@ h2 {
 .form-group {
   margin-bottom: 20px;
 }
-
+/*freecodecamp.org, 2024*/
 .label {
   font-weight: 600;
   display: block;
@@ -53,7 +53,7 @@ input[type="number"] {
   font-size: 1em;
   transition: border 0.3s;
 }
-
+/*freecodecamp.org, 2024*/
 input[type="text"]:focus,
 input[type="number"]:focus {
   border-color: #1e88e5;
@@ -63,7 +63,7 @@ input[type="number"]:focus {
 .type-select {
   margin-bottom: 20px;
 }
-
+/*freecodecamp.org, 2024*/
 .radio-group {
   display: flex;
   gap: 15px;
@@ -72,7 +72,7 @@ input[type="number"]:focus {
 .radio-option {
   font-weight: 500;
 }
-
+/*freecodecamp.org, 2024*/
 .save-btn {
   background: #43a047;
   color: #fff;
@@ -88,7 +88,7 @@ input[type="number"]:focus {
   background: #2e7d32;
   transform: translateY(-1px);
 }
-
+/*freecodecamp.org, 2024*/
 .message {
   text-align: center;
   font-weight: 600;
@@ -98,8 +98,15 @@ input[type="number"]:focus {
 .message:has(> [text*="successfully"]) {
   color: #2e7d32;
 }
-
+/*freecodecamp.org, 2024*/
 .message:has(> [text*="Error"]),
 .message:has(> [text*="Server"]) {
   color: #c62828;
 }
+
+/*
+//Reference list:
+
+//Microsoft. 2025. Regular Expression Language - Quick Reference, 18 June 2022. [Online]. Available at: https://learn.microsoft.com/en-us/dotnet/standard/base-types/regular-expression-language-quick-reference [Accessed 5 October 2025].
+//freecodecamp.org. 2024. MERN Stack Tutorial with Deployment – Beginner's Course. [video online] Available at: https://www.youtube.com/watch
+*/

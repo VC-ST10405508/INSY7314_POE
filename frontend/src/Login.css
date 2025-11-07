@@ -1,9 +1,16 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: "Inter", sans-serif;
   background: linear-gradient(135deg, #0b3d91, #1e88e5);
   margin: 0;
   color: #1a1a1a;
 }
+/*freecodecamp.org, 2024*/
 
 .auth-container {
   display: flex;
@@ -12,7 +19,7 @@ body {
   min-height: 100vh;
   padding: 20px;
 }
-
+/*freecodecamp.org, 2024*/
 .auth-card {
   background: #ffffff;
   border-radius: 12px;
@@ -27,7 +34,7 @@ h2 {
   color: #0b3d91;
   margin-bottom: 5px;
 }
-
+/*freecodecamp.org, 2024*/
 .subtitle {
   color: #666;
   font-size: 0.9em;
@@ -39,7 +46,7 @@ h2 {
   flex-direction: column;
   text-align: left;
 }
-
+/*freecodecamp.org, 2024*/
 .form-group {
   margin-bottom: 20px;
 }
@@ -49,7 +56,7 @@ label {
   font-weight: 600;
   margin-bottom: 8px;
 }
-
+/*freecodecamp.org, 2024*/
 input {
   width: 100%;
   padding: 10px 12px;
@@ -63,7 +70,7 @@ input:focus {
   border-color: #1e88e5;
   outline: none;
 }
-
+/*freecodecamp.org, 2024*/
 .login-btn {
   background: #43a047;
   color: #fff;
@@ -79,7 +86,7 @@ input:focus {
   background: #2e7d32;
   transform: translateY(-1px);
 }
-
+/*freecodecamp.org, 2024*/
 .message {
   margin-top: 15px;
   font-weight: 600;
@@ -92,7 +99,7 @@ input:focus {
 .message:has(> [text*="Invalid"]) {
   color: #c62828;
 }
-
+/*freecodecamp.org, 2024*/
 .register-link {
   margin-top: 20px;
   color: #555;
@@ -106,3 +113,10 @@ input:focus {
 .register-link span:hover {
   text-decoration: underline;
 }
+/*freecodecamp.org, 2024*/
+/*
+//Reference list:
+
+//Microsoft. 2025. Regular Expression Language - Quick Reference, 18 June 2022. [Online]. Available at: https://learn.microsoft.com/en-us/dotnet/standard/base-types/regular-expression-language-quick-reference [Accessed 5 October 2025].
+//freecodecamp.org. 2024. MERN Stack Tutorial with Deployment – Beginner's Course. [video online] Available at: https://www.youtube.com/watch
+*/

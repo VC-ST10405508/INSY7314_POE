@@ -10,7 +10,7 @@ body {
   padding: 40px;
   min-height: 100vh;
 }
-
+/*freecodecamp.org, 2024*/
 .admin-header {
   display: flex;
   justify-content: space-between;
@@ -18,7 +18,7 @@ body {
   color: #fff;
   margin-bottom: 20px;
 }
-
+/*freecodecamp.org, 2024*/
 .logout-btn {
   background: #EF5350;
   border: none;
@@ -31,14 +31,14 @@ body {
 .logout-btn:hover {
   background: #C62828;
 }
-
+/*freecodecamp.org, 2024*/
 .transactions-card {
   background: #fff;
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
-
+/*freecodecamp.org, 2024*/
 .transactions-header {
   display: flex;
   justify-content: space-between;
@@ -52,7 +52,7 @@ body {
   border-radius: 6px;
   margin-right: 10px;
 }
-
+/*freecodecamp.org, 2024*/
 .export-btn {
   background: #43A047;
   color: #fff;
@@ -65,12 +65,12 @@ body {
 .export-btn:hover {
   background: #2E7D32;
 }
-
+/*freecodecamp.org, 2024*/
 .transactions-table {
   width: 100%;
   border-collapse: collapse;
 }
-
+/*freecodecamp.org, 2024*/
 .transactions-table th,
 .transactions-table td {
   text-align: left;
@@ -82,7 +82,7 @@ body {
   background: #F5F5F5;
   font-weight: 600;
 }
-
+/*freecodecamp.org, 2024*/
 .user-cell {
   display: flex;
   align-items: center;
@@ -100,16 +100,16 @@ body {
   font-weight: bold;
   color: #0B3D91;
 }
-
+/*freecodecamp.org, 2024*/
 .user-name {
   font-weight: 600;
 }
-
+/*freecodecamp.org, 2024*/
 .user-role {
   font-size: 0.85em;
   color: #666;
 }
-
+/*freecodecamp.org, 2024*/
 .status {
   font-weight: 600;
   text-transform: capitalize;
@@ -123,7 +123,7 @@ body {
 .status.failed {
   color: #C62828;
 }
-
+/*freecodecamp.org, 2024*/
 .view-btn,
 .delete-btn {
   border: none;
@@ -131,13 +131,20 @@ body {
   cursor: pointer;
   font-weight: 600;
 }
-
+/*freecodecamp.org, 2024*/
 .view-btn {
   color: #1E88E5;
 }
-
+/*freecodecamp.org, 2024*/
 .message {
   color: #C62828;
   font-weight: 500;
   margin-top: 10px;
 }
+/*freecodecamp.org, 2024*/
+/*
+//Reference list:
+
+//Microsoft. 2025. Regular Expression Language - Quick Reference, 18 June 2022. [Online]. Available at: https://learn.microsoft.com/en-us/dotnet/standard/base-types/regular-expression-language-quick-reference [Accessed 5 October 2025].
+//freecodecamp.org. 2024. MERN Stack Tutorial with Deployment – Beginner's Course. [video online] Available at: https://www.youtube.com/watch
+*/

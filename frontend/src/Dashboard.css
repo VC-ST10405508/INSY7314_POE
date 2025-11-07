@@ -10,7 +10,7 @@ body {
   padding: 40px;
   min-height: 100vh;
 }
-
+/*freecodecamp.org, 2024*/
 .dashboard-header {
   display: flex;
   justify-content: space-between;
@@ -31,8 +31,7 @@ body {
 .logout-btn:hover {
   background: #c62828;
 }
-
-/* Card styling */
+/*freecodecamp.org, 2024*/
 .transactions-card {
   background: #fff;
   border-radius: 12px;
@@ -46,7 +45,7 @@ body {
   align-items: center;
   margin-bottom: 15px;
 }
-
+/*freecodecamp.org, 2024*/
 .add-btn {
   background: #ff6f00;
   color: #fff;
@@ -61,7 +60,7 @@ body {
   background: #e65100;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
 }
-
+/*freecodecamp.org, 2024*/
 .transactions-table {
   width: 100%;
   border-collapse: collapse;
@@ -73,7 +72,7 @@ body {
   padding: 14px;
   border-bottom: 1px solid #eee;
 }
-
+/*freecodecamp.org, 2024*/
 .transactions-table th {
   text-transform: uppercase;
   letter-spacing: 0.04em;
@@ -86,7 +85,6 @@ body {
   background: #f9f9f9;
 }
 
-/* Status badges */
 .status-badge {
   padding: 6px 12px;
   border-radius: 20px;
@@ -95,7 +93,7 @@ body {
   display: inline-block;
   text-transform: uppercase;
 }
-
+/*freecodecamp.org, 2024*/
 .status-badge.paid {
   background: #c8e6c9;
   color: #2e7d32;
@@ -110,7 +108,7 @@ body {
   background: #e3f2fd;
   color: #1e88e5;
 }
-
+/*freecodecamp.org, 2024*/
 .status-badge.failed {
   background: #ffcdd2;
   color: #c62828;
@@ -121,3 +119,11 @@ body {
   font-weight: 500;
   margin-top: 10px;
 }
+/*freecodecamp.org, 2024*/
+
+/*
+//Reference list:
+
+//Microsoft. 2025. Regular Expression Language - Quick Reference, 18 June 2022. [Online]. Available at: https://learn.microsoft.com/en-us/dotnet/standard/base-types/regular-expression-language-quick-reference [Accessed 5 October 2025].
+//freecodecamp.org. 2024. MERN Stack Tutorial with Deployment – Beginner's Course. [video online] Available at: https://www.youtube.com/watch
+*/

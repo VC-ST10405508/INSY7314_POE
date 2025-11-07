@@ -39,6 +39,8 @@ export default function Login(){
       <div className="auth-card">
         <h2>Welcome Back</h2>
         <p className="subtitle">Securely access your account</p>
+        {/*freecodecamp.org, 2024*/}
+
 
         <form onSubmit={submit} className="auth-form">
           <div className="form-group">
@@ -50,6 +52,8 @@ export default function Login(){
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
+            {/*freecodecamp.org, 2024*/}
+
           </div>
 
           <div className="form-group">
@@ -61,6 +65,8 @@ export default function Login(){
               value={password}
               onChange={(e) => setPassword(e.target.value)}
             />
+            {/*freecodecamp.org, 2024*/}
+
           </div>
 
           <button type="submit" className="login-btn">
@@ -68,6 +74,8 @@ export default function Login(){
           </button>
 
           {msg && <p className="message">{msg}</p>}
+          {/*freecodecamp.org, 2024*/}
+
         </form>
 
       </div>
