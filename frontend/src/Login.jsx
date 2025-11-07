@@ -21,16 +21,16 @@ export default function Login(){
     //(freecodecamp.ord, 2024):
     if (res.ok && json?.success && json.token) {
       saveToken(json.token)
-      const role = json?.user?.role || 'user' // 👈 added role extraction
+      const role = json?.user?.role || 'user'
       if (role === 'admin') {
-        nav('/Admin') // 👈 redirect admin
+        nav('/Admin')
       } else {
-        nav('/Dashboard') // 👈 redirect user
+        nav('/Dashboard')
       }
     } else {
       setMsg(json?.message || 'Login failed')
     }
-    //confirmation that user details is valid(freecodecamp.ord, 2024):
+    //confirmation that user details is valid (freecodecamp.ord, 2024):
   }
 
   return (
@@ -43,7 +43,7 @@ export default function Login(){
       </form>
       {msg && <p>{msg}</p>}
     </div>
-    //visuals for user interface(freecodecamp.ord, 2024):
+    //(freecodecamp.ord, 2024):
   )
 }
 

@@ -24,11 +24,11 @@ createRoot(document.getElementById('root')).render(
         <Route path="/login" element={<Login />} />
         <Route path="/dashboard" element={<ProtectedRoute><Dashboard /></ProtectedRoute>} />
         <Route path="/newtransaction" element={<ProtectedRoute><NewTransaction /></ProtectedRoute>} />
-        <Route path="/admin" element={<ProtectedRoute><AdminDashboard /></ProtectedRoute>} />     
+        <Route path="/admin" element={<ProtectedRoute><AdminDashboard /></ProtectedRoute>} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
-  //Allows pages to be accessed when clicking on links(freecodecamp.ord, 2024):
+  //(freecodecamp.ord, 2024):
 )
 
 //Reference list:

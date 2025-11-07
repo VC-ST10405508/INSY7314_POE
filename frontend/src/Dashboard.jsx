@@ -35,11 +35,12 @@ export default function Dashboard() {
     localStorage.removeItem('role')
     nav('/login')
   }
+  //(freecodecamp.org, 2024):
 
   const goToAddTransaction = () => {
   nav('/newtransaction')
   }
-
+  //(freecodecamp.org, 2024):
 
 
   return (
@@ -59,7 +60,14 @@ export default function Dashboard() {
       </ul>
 
       <button onClick={goToAddTransaction}>Add Transaction</button>
-      {/* confirmation that user was able to login(freecodecamp.org, 2024): */}
+      {/* (freecodecamp.org, 2024): */}
     </div>
   )
 }
+//(freecodecamp.org, 2024):
+
+//Reference list:
+
+//Microsoft. 2025. Regular Expression Language - Quick Reference, 18 June 2022. [Online]. Available at: https://learn.microsoft.com/en-us/dotnet/standard/base-types/regular-expression-language-quick-reference [Accessed 5 October 2025].
+//freecodecamp.org. 2024. MERN Stack Tutorial with Deployment – Beginner's Course. [video online] Available at: https://www.youtube.com/watch?v=O3BUHwfHf84 [Accessed 5 October 2025].
+

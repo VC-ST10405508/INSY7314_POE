@@ -11,17 +11,19 @@ export default function NewTransaction() {
   const [description, setDescription] = useState('')
   const [message, setMessage] = useState('')
   const nav = useNavigate()
+  //(freecodecamp.org, 2024):
 
   const handleSubmit = async (e) => {
     e.preventDefault()
     const token = getToken()
+    //(freecodecamp.org, 2024):
 
     const data = {
       type,
       amount: Number(amount),
       recipient,
       description
-      // status is automatically set to "pending" in the backend (freecodecamp.org, 2024)
+      //(freecodecamp.org, 2024)
     }
 
     try {
@@ -33,6 +35,7 @@ export default function NewTransaction() {
         },
         body: JSON.stringify(data),
       })
+      //(freecodecamp.org, 2024):
 
       if (res.ok) {
         setMessage('Transaction added successfully!')
@@ -52,6 +55,7 @@ export default function NewTransaction() {
       setMessage('Server error occurred.')
     }
   }
+  //(freecodecamp.org, 2024):
 
   return (
     <div style={{ padding: 20 }}>
@@ -112,10 +116,11 @@ export default function NewTransaction() {
         </div>
 
         <button type="submit">Save</button>
+        
       </form>
       {message && <p>{message}</p>}
     </div>
-    //bare-bone input interface(freecodecamp.org, 2024):
+    //(freecodecamp.org, 2024):
   )
 }
 

@@ -5,7 +5,7 @@ export default function AppHome(){
       <h1>Welcome to the Emeris Student Banking Portal!</h1>
       <p><Link to="/login">Login</Link></p>
     </div>
-    // welcome page for greeting users(freecodecamp.ord, 2024):
+    //(freecodecamp.ord, 2024):
   )
 }
 
