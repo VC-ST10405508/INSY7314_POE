@@ -49,10 +49,16 @@ jobs:
     steps:
       - checkout
       - run:
+        name: Install backend dependencies
+        command: |
+          cd backend
+          npm install
+    # Run tests with coverage
+      - run:
         name: Run tests with coverage
         command: |
-         cd backend
-         npx jest --coverage
+          cd backend
+          npx jest --coverage
       #Running the sonarQube scan (CircleCI Developers, 2025):
       - sonarcloud/scan
 
