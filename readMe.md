@@ -61,9 +61,13 @@ Additional tools:
 everything should be working now.
 ---
 
-# Challanges faced:
-- This is our ever assignment that we have done with a fully integrated MERN. The main problem was trying to understand how to set everything up with good OOP (object orientated programming) and SoC (seperation of concerns) in mind since we have been taught that OOP and SoC are essential for application development. 
-- With other Assigments and some of our members working real jobs - we unfortunatly ran out of time. We also had unforseen circumstances on the final few days of submission which lead to a failure to deliver a nice banking portal so we did the bare minimum to try meet the rubric's marking allocation. 
+#env
+create a .env file that has the following:
+frontEndPort=5000
+tokenSecret=VerySecret
+MONGO_URL=mongodb+srv://st10405508_db_user:MLVDwdsQb5oCmIfk@poe.upxfz2d.mongodb.net/
+SSL_KEY_PATH=ssl/key.pem
+SSL_CERT_PATH=ssl/cert.pem
 
 
 
