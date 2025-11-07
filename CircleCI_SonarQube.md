@@ -1,5 +1,3 @@
-
- 
 # Introduction:
 In this document, I will walk you through the steps I took to implement the CircleCI pipeline with SonarQube. I used various videos and documentation provided by the creators of CircleCI and SonarQube to complete this task.
 # CircleCI:
