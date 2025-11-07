@@ -1,5 +1,5 @@
 import express from "express";
-import { register, login } from "../controllers/authController.js";
+import { login } from "../controllers/authController.js";
 //(freecodecamp.ord, 2024):
 
 //creating the express router var
@@ -7,7 +7,6 @@ const router = express.Router();
 //(freecodecamp.ord, 2024):
 
 //creating the login route
-router.post("/register", register);
 router.post("/login", login)
 //(freecodecamp.ord, 2024):
 

@@ -3,7 +3,6 @@ import { createRoot } from 'react-dom/client'
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import AppHome from './AppHome'
 import Login from './Login'
-import Register from './Register'
 import Dashboard from './Dashboard'
 import NewTransaction from './NewTransaction'
 import AdminDashboard from './Admin'
@@ -23,7 +22,6 @@ createRoot(document.getElementById('root')).render(
       <Routes>
         <Route path="/" element={<AppHome />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
         <Route path="/dashboard" element={<ProtectedRoute><Dashboard /></ProtectedRoute>} />
         <Route path="/newtransaction" element={<ProtectedRoute><NewTransaction /></ProtectedRoute>} />
         <Route path="/admin" element={<ProtectedRoute><AdminDashboard /></ProtectedRoute>} />     
