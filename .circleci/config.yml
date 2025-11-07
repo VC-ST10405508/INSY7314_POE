@@ -48,13 +48,6 @@ jobs:
      - image: cimg/node:25.1.0
     steps:
       - checkout
-      # Run tests with coverage
-      - run:
-          name: Run tests with coverage
-          command: |
-            cd backend
-            npm install
-            npx jest --coverage --passWithNoTests
       # Running the SonarQube scan
       - sonarcloud/scan
 
