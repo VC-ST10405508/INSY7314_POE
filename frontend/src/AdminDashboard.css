@@ -1,0 +1,143 @@
+body {
+  font-family: "Inter", sans-serif;
+  background: linear-gradient(135deg, #0B3D91, #1E88E5);
+  color: #1A1A1A;
+  margin: 0;
+  padding: 0;
+}
+
+.admin-container {
+  padding: 40px;
+  min-height: 100vh;
+}
+
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.logout-btn {
+  background: #EF5350;
+  border: none;
+  padding: 8px 16px;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.logout-btn:hover {
+  background: #C62828;
+}
+
+.transactions-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.transactions-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.search-input {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-right: 10px;
+}
+
+.export-btn {
+  background: #43A047;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.export-btn:hover {
+  background: #2E7D32;
+}
+
+.transactions-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.transactions-table th,
+.transactions-table td {
+  text-align: left;
+  padding: 12px;
+  border-bottom: 1px solid #E0E0E0;
+}
+
+.transactions-table th {
+  background: #F5F5F5;
+  font-weight: 600;
+}
+
+.user-cell {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  background: #E3F2FD;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  font-weight: bold;
+  color: #0B3D91;
+}
+
+.user-name {
+  font-weight: 600;
+}
+
+.user-role {
+  font-size: 0.85em;
+  color: #666;
+}
+
+.status {
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.status.pending {
+  color: #F9A825;
+}
+.status.completed {
+  color: #2E7D32;
+}
+.status.failed {
+  color: #C62828;
+}
+
+.view-btn,
+.delete-btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.view-btn {
+  color: #1E88E5;
+}
+
+.message {
+  color: #C62828;
+  font-weight: 500;
+  margin-top: 10px;
+}
