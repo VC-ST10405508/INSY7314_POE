@@ -1,5 +1,5 @@
 # Introduction:
-In this document, I will walk you through the steps I took to implement the CircleCI pipeline with SonarQube. I used various videos and documentation provided by the creators of CircleCI and SonarQube to complete this task.
+In this document, I will walk you through the steps I took to implement the CircleCI pipeline with SonarQube. I used various videos and documentation provided by the creators of CircleCI and SonarQube to complete this task. If you want to report any other security issues not mentioned in the SonarQube file. please contact us through our github emails.
 # CircleCI:
 ## Start:
 For CircleCI it was basic. These were the steps I followed (CircleCI, 2021):
