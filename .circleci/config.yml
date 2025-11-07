@@ -54,7 +54,7 @@ jobs:
           command: |
             cd backend
             npm install
-            npm run test
+            npx jest --coverage
       # Running the SonarQube scan
       - sonarcloud/scan
 
