@@ -16,8 +16,10 @@ The SonarQube is also added to the CircleCI pipeline so that it automatically ru
 - Create a sonar cloud account – I just used my github account for this too so that I could easily link it to the github repository where the circleCI pipeline is.
 - From there I figured out how to run a scan on my Github repository. However, I needed this to work through an API or something else for the CircleCI pipeline.
 - That’s when I found the Analysis method section
+
  ![alt text](image.png)
 Figure 1
+
 - I saw the “With CircleCI”. When you click it it will take you to a page that provides you with how to setup SonarQube to work with the CircleCI pipeline. It is really easy to do.
  ![alt text](image-1.png)
 Figure 2
